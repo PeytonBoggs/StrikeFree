@@ -8,7 +8,7 @@ interface Assessment1Props {
     setStrikeRiskScore: (score: number) => void;
 }
 
-export default function Assessment1({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
+export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
     const [selected, setSelected] = useState([false, false, false]);
 
     const { width: screenWidth } = Dimensions.get("window");

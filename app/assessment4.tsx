@@ -8,7 +8,7 @@ interface Assessment1Props {
     setStrikeRiskScore: (score: number) => void;
 }
 
-export default function Assessment1({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
+export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
     const [indoorSelected, setIndoorSelected] = useState([false, false, false, false]);
     const [outdoorSelected, setOutdoorSelected] = useState([false, false, false, false]);
 
