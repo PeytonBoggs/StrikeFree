@@ -45,7 +45,7 @@ export default function WindowExterior({ setPage }: WindowExteriorProps) {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("WindowExterior")}
+                    onPress={() => setPage("WindowExteriorFilms")}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Window Films</Text>
                 </TouchableOpacity>

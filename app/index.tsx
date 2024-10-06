@@ -12,6 +12,7 @@ import Assessment7 from "./assessment7";
 import StrikeRiskResults from "./strikeRiskResults";
 import BirdSaveSolutions from "./birdSaveSolutions";
 import WindowExterior from "./windowExterior";
+import WindowExteriorFilms from "./windowExteriorFilms";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -41,6 +42,8 @@ export default function Index() {
         return <BirdSaveSolutions setPage={setPage} />;
       case "WindowExterior":
         return <WindowExterior setPage={setPage} />;
+      case "WindowExteriorFilms":
+        return <WindowExteriorFilms setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }
