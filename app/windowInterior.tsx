@@ -21,7 +21,7 @@ export default function WindowInterior({ setPage }: WindowInteriorProps) {
             <Text style={{ fontSize: 24 * screenWidth/375, textAlign: "center", margin: 5 }}>Window Interior</Text>
 
             <Text style={{ width: "80%", fontSize: 14 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>
-            In the rare situations where birds can see all the way through the glass and back to the outside world (e.g. a glass cornered building, or a glass walkway), 
+            In the rare situations where birds can see all the way through the glass and back to the outside world (e.g. a glass cornered building), 
             altering the internal surface of the glass can help to reduce collisions.
             
             Click on a solution to learn more.</Text>
@@ -95,7 +95,7 @@ export default function WindowInterior({ setPage }: WindowInteriorProps) {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("WindowInteriorCords")}
+                    onPress={() => setPage("WindowInteriorPaints")}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Paints and Markings</Text>
                 </TouchableOpacity>
