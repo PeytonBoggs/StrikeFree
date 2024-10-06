@@ -6,6 +6,7 @@ import Assessment3 from "./assessment3";
 import Assessment4 from "./assessment4";
 import Assessment5 from "./assessment5";
 import Assessment6 from "./assessment6";
+import Assessment7 from "./assessment7";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -27,6 +28,8 @@ export default function Index() {
         return <Assessment5 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
       case "Assessment6":
         return <Assessment6 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
+      case "Assessment7":
+        return <Assessment7 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
       default:
         return <Home setPage={setPage} />;
     }

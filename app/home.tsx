@@ -16,6 +16,7 @@ export default function Home({ setPage }: HomeProps) {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "aliceblue",
         }}>
             <View style={{
                 height: screenHeight * 0.2,
@@ -37,7 +38,7 @@ export default function Home({ setPage }: HomeProps) {
                     }}
                     onPress={() => setPage("Assessment1")}
                 >
-                    <Text style={{ color: 'white', fontSize: 26 * screenWidth/375 }}>StrikeRisk Assessment</Text>
+                    <Text style={{ fontSize: 26 * screenWidth/375 }}>StrikeRisk Assessment</Text>
                 </TouchableOpacity>
             </View>
         </View>

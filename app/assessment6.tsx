@@ -35,6 +35,7 @@ export default function Assessment6({ setPage, strikeRiskScore, setStrikeRiskSco
         flex: 1,
         justifyContent: "flex-start",
         alignItems: "center",
+        backgroundColor: "aliceblue",
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment</Text>
             <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 6 of 7</Text>
@@ -151,7 +152,7 @@ export default function Assessment6({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: 'lightgrey',
+                            backgroundColor: 'lightblue',
                             alignItems: "center",
                             justifyContent: "center",
                             }}
