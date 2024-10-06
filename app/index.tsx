@@ -17,6 +17,7 @@ import WindowExteriorTapes from "./windowExteriorTapes";
 import WindowExteriorCords from "./windowExteriorCords";
 import WindowInterior from "./windowInterior";
 import WindowInteriorFilms from "./windowInteriorFilms";
+import WindowInteriorTapes from "./windowInteriorTapes";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -56,6 +57,8 @@ export default function Index() {
           return <WindowInterior setPage={setPage} />;
       case "WindowInteriorFilms":
           return <WindowInteriorFilms setPage={setPage} />;
+      case "WindowInteriorTapes":
+          return <WindowInteriorTapes setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }
