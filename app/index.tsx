@@ -14,6 +14,7 @@ import BirdSaveSolutions from "./birdSaveSolutions";
 import WindowExterior from "./windowExterior";
 import WindowExteriorFilms from "./windowExteriorFilms";
 import WindowExteriorTapes from "./windowExteriorTapes";
+import WindowExteriorCords from "./windowExteriorCords";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -47,6 +48,8 @@ export default function Index() {
         return <WindowExteriorFilms setPage={setPage} />;
       case "WindowExteriorTapes":
         return <WindowExteriorTapes setPage={setPage} />;
+      case "WindowExteriorCords":
+        return <WindowExteriorCords setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }

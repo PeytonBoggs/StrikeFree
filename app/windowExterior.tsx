@@ -95,7 +95,7 @@ export default function WindowExterior({ setPage }: WindowExteriorProps) {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("BirdSaveSolutions")}
+                    onPress={() => setPage("WindowExteriorCords")}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Cords and Screens</Text>
                 </TouchableOpacity>

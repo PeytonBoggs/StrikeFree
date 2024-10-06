@@ -23,7 +23,7 @@ export default function WindowExteriorTapes({ setPage }: WindowExteriorTapesProp
             <Text style={{ width: "80%", fontSize: 14 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>
             Tapes and decals can often be applied yourself, to the exterior surface of glass. You must apply enough elements so that 
             the entire window is covered with gaps no less than 2 inches (6 cm) apart, and he tape or decals must have elements that are clearly visible to birds. 
-            These can include black/white, other colors, and ultraviolet (which are visible to many birds but not people) patterns</Text>
+            These can include black/white, other colors, and ultraviolet (which are visible to many birds but not people) patterns.</Text>
 
             <View style={{ flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "80%" }}>
                 <Text style={{ width: "33%", height: "90%", fontSize: 10 * screenWidth/375, margin: 5, marginHorizontal: 10, padding: 5, borderWidth: 1, borderRadius: 10, borderColor: "white", backgroundColor: "lightgreen", overflow: "hidden", textAlign: "center" }}>
