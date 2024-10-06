@@ -1,6 +1,13 @@
-import { Button, Dimensions, Text, TouchableOpacity, View } from "react-native";
+import { useState } from "react";
+import { Dimensions, Text, TouchableOpacity, View } from "react-native";
 
-export default function Home() {
+interface HomeProps {
+    setPage: (page: string) => void;
+}
+
+export default function Home({ setPage }: HomeProps) {
+    const [strikeRiskScore, setStrikeRiskScore] = useState(0);
+
     const { width: screenWidth } = Dimensions.get("window");
     const { height: screenHeight } = Dimensions.get("window");
 
@@ -28,7 +35,7 @@ export default function Home() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => console.log("Pressed")}
+                    onPress={() => setPage("Assessment1")}
                 >
                     <Text style={{ color: 'white', fontSize: 26 * screenWidth/375 }}>StrikeRisk Assessment</Text>
                 </TouchableOpacity>
