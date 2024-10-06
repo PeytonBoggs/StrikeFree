@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import Home from "./home";
 import Assessment1 from "./assessment1";
 import Assessment2 from "./assessment2";
@@ -7,9 +9,8 @@ import Assessment4 from "./assessment4";
 import Assessment5 from "./assessment5";
 import Assessment6 from "./assessment6";
 import Assessment7 from "./assessment7";
-import { View } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import StrikeRiskResults from "./strikeRiskResults";
+import BirdSaveSolutions from "./birdSaveSolutions";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -35,6 +36,8 @@ export default function Index() {
         return <Assessment7 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
       case "StrikeRiskResults":
         return <StrikeRiskResults setPage={setPage} strikeRiskScore={strikeRiskScore} />;
+      case "BirdSaveSolutions":
+        return <BirdSaveSolutions setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }

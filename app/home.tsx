@@ -14,7 +14,7 @@ export default function Home({ setPage }: HomeProps) {
     return (
         <View style={{
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         alignItems: "center",
         }}>
             <View style={{
@@ -37,7 +37,31 @@ export default function Home({ setPage }: HomeProps) {
                     }}
                     onPress={() => setPage("Assessment1")}
                 >
-                    <Text style={{ fontSize: 26 * screenWidth/375 }}>StrikeRisk Assessment</Text>
+                    <Text style={{ fontSize: 26 * screenWidth/375, textAlign: "center" }}>StrikeRisk Assessment</Text>
+                </TouchableOpacity>
+            </View>
+
+            <View style={{
+                height: screenHeight * 0.2,
+                width: screenWidth * 0.8,
+                borderWidth: 1,
+                borderColor: "white",
+                borderRadius: 20,
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+                <TouchableOpacity
+                    style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: 20,
+                    backgroundColor: 'lightblue',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    }}
+                    onPress={() => setPage("BirdSaveSolutions")}
+                >
+                    <Text style={{ fontSize: 26 * screenWidth/375, textAlign: "center" }}>Browse BirdSave Solutions</Text>
                 </TouchableOpacity>
             </View>
         </View>
