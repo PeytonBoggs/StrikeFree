@@ -27,13 +27,13 @@ export default function WindowInteriorFilms({ setPage }: WindowInteriorFilmsProp
 
             <View style={{ flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "80%" }}>
                 <Text style={{ width: "33%", height: "90%", fontSize: 10 * screenWidth/375, margin: 5, marginHorizontal: 10, padding: 5, borderWidth: 1, borderRadius: 10, borderColor: "white", backgroundColor: "lemonchiffon", overflow: "hidden", textAlign: "center" }}>
-                Effectiveness:{"\n"}Mid
+                Effectiveness:{"\n"}Fair
                 </Text>
                 <Text style={{ width: "33%", height: "90%", fontSize: 10 * screenWidth/375, margin: 5, marginHorizontal: 10, padding: 5, borderWidth: 1, borderRadius: 10, borderColor: "white", backgroundColor: "lemonchiffon", overflow: "hidden", textAlign: "center" }}>
-                Implementation:{"\n"}Mid
+                Implementation:{"\n"}Fair
                 </Text>
                 <Text style={{ width: "33%", height: "90%", fontSize: 10 * screenWidth/375, margin: 5, marginHorizontal: 10, padding: 5, borderWidth: 1, borderRadius: 10, borderColor: "white", backgroundColor: "lemonchiffon", overflow: "hidden", textAlign: "center" }}>
-                Cost:{"\n"}Mid
+                Cost:{"\n"}Fair
                 </Text>
             </View>
 

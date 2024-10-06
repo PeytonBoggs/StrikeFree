@@ -19,6 +19,7 @@ import WindowInterior from "./windowInterior";
 import WindowInteriorFilms from "./windowInteriorFilms";
 import WindowInteriorTapes from "./windowInteriorTapes";
 import WindowInteriorPaints from "./windowInteriorPaints";
+import InteriorLighting from "./interiorLighting";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -62,6 +63,8 @@ export default function Index() {
           return <WindowInteriorTapes setPage={setPage} />;
       case "WindowInteriorPaints":
           return <WindowInteriorPaints setPage={setPage} />;
+      case "InteriorLighting":
+          return <InteriorLighting setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }
