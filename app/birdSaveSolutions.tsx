@@ -141,6 +141,31 @@ export default function BirdSaveSolutions({ setPage }: BirdSaveSolutionsProps) {
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Bird Attractants</Text>
                 </TouchableOpacity>
             </View>
+
+            <View style={{
+                height: screenHeight * 0.1,
+                width: screenWidth * 0.8,
+                borderWidth: 1,
+                borderColor: "white",
+                borderRadius: 20,
+                margin: 10,
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+                <TouchableOpacity
+                    style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: 20,
+                    backgroundColor: 'lightblue',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    }}
+                    onPress={() => setPage("Home")}
+                >
+                    <Text style={{ fontSize: 26 * screenWidth/375 }}>Back to Menu</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }

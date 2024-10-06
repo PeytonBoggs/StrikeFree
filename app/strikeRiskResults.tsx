@@ -4,9 +4,10 @@ import { Dimensions, Text, TouchableOpacity, View } from "react-native";
 interface StrikeRiskResultsProps {
     setPage: (page: string) => void;
     strikeRiskScore: number;
+    setStrikeRiskScore: (score: number) => void;
 }
 
-export default function StrikeRiskResults({ setPage, strikeRiskScore }: StrikeRiskResultsProps) {
+export default function StrikeRiskResults({ setPage, strikeRiskScore, setStrikeRiskScore }: StrikeRiskResultsProps) {
     function getRiskColor() {
         if (strikeRiskScore <= 5) {
             return "green";
@@ -49,6 +50,10 @@ export default function StrikeRiskResults({ setPage, strikeRiskScore }: StrikeRi
         }
     }
 
+    function resetAssessment() {
+        setStrikeRiskScore(0);
+        setPage("BirdSaveSolutions");
+    }
     
     const { width: screenWidth } = Dimensions.get("window");
     const { height: screenHeight } = Dimensions.get("window");
@@ -86,7 +91,7 @@ export default function StrikeRiskResults({ setPage, strikeRiskScore }: StrikeRi
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("BirdSaveSolutions")}
+                    onPress={() => resetAssessment()}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>View Solutions</Text>
                 </TouchableOpacity>

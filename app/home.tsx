@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dimensions, Text, TouchableOpacity, View } from "react-native";
+import { Dimensions, Image, Text, TouchableOpacity, View } from "react-native";
 
 interface HomeProps {
     setPage: (page: string) => void;
@@ -14,12 +14,19 @@ export default function Home({ setPage }: HomeProps) {
     return (
         <View style={{
         flex: 1,
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems: "center",
         }}>
+            <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", margin: 50 }}>
+                <Text style={{ fontSize: 36 * screenWidth/375 }}>StrikeFree</Text>
+                <Image source={require('@/assets/images/bird.png')} style={{ width: screenWidth * 0.1, height: screenWidth * 0.1, aspectRatio: 1 }} />
+            </View>
+
             <View style={{
+                flex: 1,
                 height: screenHeight * 0.2,
                 width: screenWidth * 0.8,
+                margin: 50,
                 borderWidth: 1,
                 borderColor: "white",
                 borderRadius: 20,
@@ -37,13 +44,15 @@ export default function Home({ setPage }: HomeProps) {
                     }}
                     onPress={() => setPage("Assessment1")}
                 >
-                    <Text style={{ fontSize: 26 * screenWidth/375, textAlign: "center" }}>StrikeRisk Assessment</Text>
+                    <Text style={{ fontSize: 36 * screenWidth/375, textAlign: "center" }}>StrikeRisk Assessment</Text>
                 </TouchableOpacity>
             </View>
 
             <View style={{
+                flex: 1,
                 height: screenHeight * 0.2,
                 width: screenWidth * 0.8,
+                margin: 50,
                 borderWidth: 1,
                 borderColor: "white",
                 borderRadius: 20,
@@ -61,7 +70,7 @@ export default function Home({ setPage }: HomeProps) {
                     }}
                     onPress={() => setPage("BirdSaveSolutions")}
                 >
-                    <Text style={{ fontSize: 26 * screenWidth/375, textAlign: "center" }}>Browse BirdSave Solutions</Text>
+                    <Text style={{ fontSize: 36 * screenWidth/375, textAlign: "center" }}>Browse BirdSave Solutions</Text>
                 </TouchableOpacity>
             </View>
         </View>

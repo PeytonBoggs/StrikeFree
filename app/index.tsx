@@ -46,7 +46,7 @@ export default function Index() {
       case "Assessment7":
         return <Assessment7 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
       case "StrikeRiskResults":
-        return <StrikeRiskResults setPage={setPage} strikeRiskScore={strikeRiskScore} />;
+        return <StrikeRiskResults setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore}/>;
       case "BirdSaveSolutions":
         return <BirdSaveSolutions setPage={setPage} />;
       case "WindowExterior":
