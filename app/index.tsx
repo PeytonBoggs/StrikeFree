@@ -21,6 +21,7 @@ import WindowInteriorTapes from "./windowInteriorTapes";
 import WindowInteriorPaints from "./windowInteriorPaints";
 import InteriorLighting from "./interiorLighting";
 import ExteriorLighting from "./exteriorLighting";
+import BirdAttractants from "./birdAttractants";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -68,6 +69,8 @@ export default function Index() {
           return <InteriorLighting setPage={setPage} />;
       case "ExteriorLighting":
           return <ExteriorLighting setPage={setPage} />;
+      case "BirdAttractants":
+          return <BirdAttractants setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }
