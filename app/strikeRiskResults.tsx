@@ -61,9 +61,9 @@ export default function StrikeRiskResults({ setPage, strikeRiskScore }: StrikeRi
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment Results</Text>
 
-            <Text style={{ width: "80%", fontSize: 20 * screenWidth/375, margin: 50, padding: 50, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: getRiskColor(), overflow: "hidden", textAlign: "center" }}>StrikeRisk: {getRiskTitle()}</Text>
+            <Text style={{ width: "80%", fontSize: 20 * screenWidth/375, margin: 25, padding: 50, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: getRiskColor(), overflow: "hidden", textAlign: "center" }}>StrikeRisk: {getRiskTitle()}</Text>
 
-            <Text style={{ width: "80%", fontSize: 16 * screenWidth/375, margin: 50, padding: 50, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>{getRiskText()}</Text>
+            <Text style={{ width: "80%", fontSize: 20 * screenWidth/375, margin: 25, padding: 20, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>{getRiskText()}</Text>
 
             <Text style={{ fontSize: 14 * screenWidth/375 }}>Reduce this StrikeRisk through BirdSave solutions:</Text>
 
@@ -73,7 +73,7 @@ export default function StrikeRiskResults({ setPage, strikeRiskScore }: StrikeRi
                 borderWidth: 1,
                 borderColor: "white",
                 borderRadius: 20,
-                margin: 50,
+                margin: 25,
                 justifyContent: "center",
                 alignItems: "center",
               }}>
