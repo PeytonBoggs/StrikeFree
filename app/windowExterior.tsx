@@ -70,7 +70,7 @@ export default function WindowExterior({ setPage }: WindowExteriorProps) {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("BirdSaveSolutions")}
+                    onPress={() => setPage("WindowExteriorTapes")}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Tapes and Decals</Text>
                 </TouchableOpacity>

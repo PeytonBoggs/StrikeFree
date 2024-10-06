@@ -13,6 +13,7 @@ import StrikeRiskResults from "./strikeRiskResults";
 import BirdSaveSolutions from "./birdSaveSolutions";
 import WindowExterior from "./windowExterior";
 import WindowExteriorFilms from "./windowExteriorFilms";
+import WindowExteriorTapes from "./windowExteriorTapes";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -44,6 +45,8 @@ export default function Index() {
         return <WindowExterior setPage={setPage} />;
       case "WindowExteriorFilms":
         return <WindowExteriorFilms setPage={setPage} />;
+      case "WindowExteriorTapes":
+        return <WindowExteriorTapes setPage={setPage} />;
       default:
         return <Home setPage={setPage} />;
     }
