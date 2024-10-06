@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { Dimensions, Image } from "react-native";
+import { Dimensions } from "react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 
-interface Assessment1Props {
+interface Assessment4Props {
     setPage: (page: string) => void;
     strikeRiskScore: number;
     setStrikeRiskScore: (score: number) => void;
 }
 
-export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
+export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment4Props) {
     const [indoorSelected, setIndoorSelected] = useState([false, false, false, false]);
     const [outdoorSelected, setOutdoorSelected] = useState([false, false, false, false]);
 

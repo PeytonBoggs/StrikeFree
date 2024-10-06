@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Dimensions, Image } from "react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 
-interface Assessment3Props {
+interface Assessment6Props {
     setPage: (page: string) => void;
     strikeRiskScore: number;
     setStrikeRiskScore: (score: number) => void;
 }
 
-export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment3Props) {
-    const [selected, setSelected] = useState([false, false, false]);
+export default function Assessment6({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment6Props) {
+    const [selected, setSelected] = useState([false, false, false, false]);
 
     const { width: screenWidth } = Dimensions.get("window");
     const { height: screenHeight } = Dimensions.get("window");
@@ -18,17 +18,16 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
         switch (selected.indexOf(true)) {
             case 0:
                 setStrikeRiskScore(strikeRiskScore + 1);
-                break;
             case 1:
-                setStrikeRiskScore(strikeRiskScore + 2);
-                break;
+                setStrikeRiskScore(strikeRiskScore + 1);
             case 2:
-                setStrikeRiskScore(strikeRiskScore + 2);
-                break;
+                setStrikeRiskScore(strikeRiskScore + 1);
+            case 3:
+                setStrikeRiskScore(strikeRiskScore + 1);
             default:
                 break;
         }
-        setPage("Assessment4");
+        setPage("Assessment7");
     }
 
     return (
@@ -38,8 +37,8 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
         alignItems: "center",
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment</Text>
-            <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 3 of 7</Text>
-            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, backgroundColor: "lightgrey", overflow: "hidden", textAlign: "center" }}>What proportion of this side of the building is covered in glass?</Text>
+            <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 6 of 7</Text>
+            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, backgroundColor: "lightgrey", overflow: "hidden", textAlign: "center" }}>What bird attractants are in the area (select all that apply)?</Text>
 
             <View style={{ flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", width: "100%" }}>
                 <View style={{ flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", margin: 10 }}>
@@ -59,10 +58,10 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
                             backgroundColor: selected[0] ? 'lightgreen' : 'lightgrey',
                             alignItems: "center",
                             }}
-                            onPress={() => setSelected([true, false, false])}
+                            onPress={() => setSelected([!selected[0], selected[1], selected[2], selected[3]])}
                         >
-                            <Image source={require("@/assets/images/reflection_weak.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
-                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Weak Reflection</Text>
+                            <Image source={require("@/assets/images/tall_vegetation.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
+                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Tall Vegetation</Text>
                         </TouchableOpacity>
                     </View>
 
@@ -82,10 +81,10 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
                             backgroundColor: selected[1] ? 'lightgreen' : 'lightgrey',
                             alignItems: "center",
                             }}
-                            onPress={() => setSelected([false, true, false])}
+                            onPress={() => setSelected([selected[0], !selected[1], selected[2], selected[3]])}
                         >
-                            <Image source={require("@/assets/images/reflection_strong.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
-                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Strong Reflection</Text>
+                            <Image source={require("@/assets/images/birdfeeder.jpg")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
+                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Bird Feeder</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -107,10 +106,10 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
                             backgroundColor: selected[2] ? 'lightgreen' : 'lightgrey',
                             alignItems: "center",
                             }}
-                            onPress={() => setSelected([false, false, true])}
+                            onPress={() => setSelected([selected[0], selected[1], !selected[2], selected[3]])}
                         >
-                            <Image source={require("@/assets/images/reflection_none.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
-                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>No reflection</Text>
+                            <Image source={require("@/assets/images/bird_bath.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
+                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Bird Bath</Text>
                         </TouchableOpacity>
                     </View>
 
@@ -120,7 +119,32 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
                         borderWidth: 1,
                         borderColor: "black",
                         borderRadius: 10,
+                        flexDirection: "row",
+                    }}>
+                        <TouchableOpacity
+                            style={{
+                            width: '100%',
+                            height: '100%',
+                            borderRadius: 10,
+                            backgroundColor: selected[3] ? 'lightgreen' : 'lightgrey',
+                            alignItems: "center",
+                            }}
+                            onPress={() => setSelected([selected[0], selected[1], selected[2], !selected[3]])}
+                        >
+                            <Image source={require("@/assets/images/nest_box.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
+                            <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Nest Boxes</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                
+                <View style={{
+                        height: screenHeight * 0.1,
+                        width: screenWidth * 0.8,
+                        borderWidth: 1,
+                        borderColor: "black",
+                        borderRadius: 10,
                         flexDirection: "column",
+                        margin: 10,
                     }}>
                         <TouchableOpacity
                             style={{
@@ -135,8 +159,8 @@ export default function Assessment3({ setPage, strikeRiskScore, setStrikeRiskSco
                         >
                             <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Next</Text>
                         </TouchableOpacity>
-                    </View>
                 </View>
+
             </View>
             
         </View>

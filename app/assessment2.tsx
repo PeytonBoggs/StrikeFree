@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Dimensions, Image } from "react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 
-interface Assessment1Props {
+interface Assessment2Props {
     setPage: (page: string) => void;
     strikeRiskScore: number;
     setStrikeRiskScore: (score: number) => void;
 }
 
-export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment1Props) {
+export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskScore }: Assessment2Props) {
     const [selected, setSelected] = useState([false, false, false, false, false]);
 
     const { width: screenWidth } = Dimensions.get("window");
