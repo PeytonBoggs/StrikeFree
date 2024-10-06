@@ -35,18 +35,17 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
         flex: 1,
         justifyContent: "flex-start",
         alignItems: "center",
-        backgroundColor: "aliceblue",
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment</Text>
             <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 7 of 7</Text>
-            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, backgroundColor: "lightgrey", overflow: "hidden", textAlign: "center" }}>Have you noticed a bird collision here before?</Text>
+            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>Have you noticed a bird collision here before?</Text>
 
             <View style={{ flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", width: "100%" }}>
             <View style={{
                         height: screenHeight * 0.1,
                         width: screenWidth * 0.8,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                         margin: 10,
@@ -56,7 +55,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[0] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[0] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             justifyContent: "center",
                             }}
@@ -70,7 +69,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                         height: screenHeight * 0.1,
                         width: screenWidth * 0.8,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                         margin: 10,
@@ -80,7 +79,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[1] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[1] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             justifyContent: "center",
                             }}
@@ -94,7 +93,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                         height: screenHeight * 0.1,
                         width: screenWidth * 0.8,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                         margin: 10,
@@ -104,7 +103,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[2] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[2] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             justifyContent: "center",
                             }}
@@ -118,7 +117,7 @@ export default function Assessmen7({ setPage, strikeRiskScore, setStrikeRiskScor
                         height: screenHeight * 0.1,
                         width: screenWidth * 0.8,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                         margin: 10,

@@ -42,11 +42,10 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
         flex: 1,
         justifyContent: "flex-start",
         alignItems: "center",
-        backgroundColor: "aliceblue",
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment</Text>
             <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 2 of 7</Text>
-            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, backgroundColor: "lightgrey", overflow: "hidden", textAlign: "center" }}>What proportion of this side of the building is covered in glass?</Text>
+            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>What proportion of this side of the building is covered in glass?</Text>
 
             <View style={{ flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", width: "100%" }}>
                 <View style={{ flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", margin: 10 }}>
@@ -54,7 +53,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "row",
                     }}>
@@ -63,7 +62,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[0] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[0] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             }}
                             onPress={() => setSelected([true, false, false, false, false])}
@@ -77,7 +76,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "row",
                     }}>
@@ -86,7 +85,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[1] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[1] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             }}
                             onPress={() => setSelected([false, true, false, false, false])}
@@ -102,7 +101,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "row",
                     }}>
@@ -111,7 +110,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[2] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[2] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             }}
                             onPress={() => setSelected([false, false, true, false, false])}
@@ -125,7 +124,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "row",
                     }}>
@@ -134,7 +133,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[3] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[3] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             }}
                             onPress={() => setSelected([false, false, false, true, false])}
@@ -150,7 +149,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "row",
                     }}>
@@ -159,7 +158,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                             width: '100%',
                             height: '100%',
                             borderRadius: 10,
-                            backgroundColor: selected[4] ? 'lightgreen' : 'lightgrey',
+                            backgroundColor: selected[4] ? 'lightgreen' : 'gainsboro',
                             alignItems: "center",
                             }}
                             onPress={() => setSelected([false, false, false, false, true])}
@@ -173,7 +172,7 @@ export default function Assessment2({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.2,
                         width: screenWidth * 0.4,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                     }}>

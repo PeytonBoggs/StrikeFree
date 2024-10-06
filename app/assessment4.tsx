@@ -44,11 +44,10 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
         flex: 1,
         justifyContent: "flex-start",
         alignItems: "center",
-        backgroundColor: "aliceblue",
         }}>
             <Text style={{ fontSize: 24 * screenWidth/375, margin: 10 }}>StrikeRisk Assessment</Text>
             <Text style={{ fontSize: 18 * screenWidth/375, margin: 10 }}>Question 4 of 7</Text>
-            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, backgroundColor: "lightgrey", overflow: "hidden", textAlign: "center" }}>How much artificial light is there around these windows?</Text>
+            <Text style={{ fontSize: 12 * screenWidth/375, margin: 10, padding: 10, borderWidth: 1, borderRadius: 20, borderColor: "white", backgroundColor: "gainsboro", overflow: "hidden", textAlign: "center" }}>How much artificial light is there around these windows?</Text>
 
             <View style={{ flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%" }}>
                 <View style={{
@@ -64,9 +63,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: indoorSelected[0] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: indoorSelected[0] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -79,9 +78,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: indoorSelected[1] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: indoorSelected[1] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -94,9 +93,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: indoorSelected[2] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: indoorSelected[2] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -109,9 +108,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: indoorSelected[3] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: indoorSelected[3] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -121,7 +120,7 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                     </TouchableOpacity>
                 </View>
 
-                <View style={{borderWidth: 1, height: screenHeight * 0.5}}></View>
+                <View style={{borderWidth: 1, borderColor: 'grey', height: screenHeight * 0.5}}></View>
 
                 <View style={{
                     height: screenHeight * 0.6,
@@ -136,9 +135,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: outdoorSelected[0] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: outdoorSelected[0] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -151,9 +150,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: outdoorSelected[1] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: outdoorSelected[1] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -166,9 +165,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: outdoorSelected[2] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: outdoorSelected[2] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -181,9 +180,9 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         width: '90%',
                         height: '15%',
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
-                        backgroundColor: outdoorSelected[3] ? 'lightgreen' : 'lightgrey',
+                        backgroundColor: outdoorSelected[3] ? 'lightgreen' : 'gainsboro',
                         alignItems: "center",
                         justifyContent: "center",
                         }}
@@ -198,7 +197,7 @@ export default function Assessment4({ setPage, strikeRiskScore, setStrikeRiskSco
                         height: screenHeight * 0.1,
                         width: screenWidth * 0.8,
                         borderWidth: 1,
-                        borderColor: "black",
+                        borderColor: "white",
                         borderRadius: 10,
                         flexDirection: "column",
                     }}>

@@ -16,7 +16,6 @@ export default function Home({ setPage }: HomeProps) {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "aliceblue",
         }}>
             <View style={{
                 height: screenHeight * 0.2,

@@ -7,6 +7,8 @@ import Assessment4 from "./assessment4";
 import Assessment5 from "./assessment5";
 import Assessment6 from "./assessment6";
 import Assessment7 from "./assessment7";
+import { View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -35,5 +37,15 @@ export default function Index() {
     }
   }
 
-  return getPage();
+  return (
+    <View style={{ flex: 1 }}>
+      <LinearGradient
+        colors={["lightblue", "white"]}
+        style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0 }}
+        start={{ x: 0, y: 1 }}
+        end={{ x: 0, y: 0 }}
+      />
+      {getPage()}
+    </View>
+  )
 }
