@@ -9,6 +9,7 @@ import Assessment6 from "./assessment6";
 import Assessment7 from "./assessment7";
 import { View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import StrikeRiskResults from "./strikeRiskResults";
 
 export default function Index() {
   const [page, setPage] = useState("Home");
@@ -32,6 +33,8 @@ export default function Index() {
         return <Assessment6 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
       case "Assessment7":
         return <Assessment7 setPage={setPage} strikeRiskScore={strikeRiskScore} setStrikeRiskScore={setStrikeRiskScore} />;
+      case "StrikeRiskResults":
+        return <StrikeRiskResults setPage={setPage} strikeRiskScore={strikeRiskScore} />;
       default:
         return <Home setPage={setPage} />;
     }
