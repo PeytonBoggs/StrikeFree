@@ -1,0 +1,38 @@
+import { Button, Dimensions, Text, TouchableOpacity, View } from "react-native";
+
+export default function Home() {
+    const { width: screenWidth } = Dimensions.get("window");
+    const { height: screenHeight } = Dimensions.get("window");
+
+    return (
+        <View style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        }}>
+            <View style={{
+                height: screenHeight * 0.2,
+                width: screenWidth * 0.8,
+                borderWidth: 1,
+                borderColor: "white",
+                borderRadius: 20,
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+                <TouchableOpacity
+                    style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: 20,
+                    backgroundColor: 'lightblue',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    }}
+                    onPress={() => console.log("Pressed")}
+                >
+                    <Text style={{ color: 'white', fontSize: 26 * screenWidth/375 }}>StrikeRisk Assessment</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    );
+}

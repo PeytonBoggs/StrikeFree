@@ -1,15 +1,17 @@
-import { Text, View } from "react-native";
+import { useState } from "react";
+import Home from "./home";
 
 export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+  const [page, setPage] = useState("Home");
+
+  function getPage() {
+    switch (page) {
+      case "Home":
+        return <Home />;
+      default:
+        return <Home />;
+    }
+  }
+
+  return getPage();
 }
