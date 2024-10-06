@@ -61,7 +61,7 @@ export default function BirdSaveSolutions({ setPage }: BirdSaveSolutionsProps) {
                     justifyContent: 'center',
                     alignItems: 'center',
                     }}
-                    onPress={() => setPage("BirdSaveSolutions")}
+                    onPress={() => setPage("WindowInterior")}
                 >
                     <Text style={{ fontSize: 26 * screenWidth/375 }}>Window Interior</Text>
                 </TouchableOpacity>

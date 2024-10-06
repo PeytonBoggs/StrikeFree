@@ -108,7 +108,7 @@ export default function Assessment6({ setPage, strikeRiskScore, setStrikeRiskSco
                             }}
                             onPress={() => setSelected([selected[0], selected[1], !selected[2], selected[3]])}
                         >
-                            <Image source={require("@/assets/images/bird_bath.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
+                            <Image source={require("@/assets/images/Bird bath.webp")} style={{ width: "95%", height: "75%", resizeMode: "cover", margin: 5}}/>
                             <Text style={{ width: "95%", height: "25%", color: 'black', fontSize: 14 * screenWidth/375, textAlign: 'center' }}>Bird Bath</Text>
                         </TouchableOpacity>
                     </View>
